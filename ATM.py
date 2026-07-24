@@ -18,7 +18,7 @@ account_balance = 500.00
 # Welcome Message
 print ("Welcome to AJL ATM")
 # Withdrawal message withdrawal_amount equal to user input
-withdrawal_amount = float(input("Enter withdrawal amount: "))
+withdrawal_amount = int(input("Enter withdrawal amount: "))
 
 
 # Validation logic uses withdrawal_amount less than equal to account_balance
@@ -26,7 +26,7 @@ withdrawal_amount = float(input("Enter withdrawal amount: "))
 # else withdrawal amount is greater than account_balance
 # code diri
 
-if withdrawal_amount <= account_balance:
+if withdrawal_amount >= account_balance:
     account_balance -= withdrawal_amount
     print(f"Withdrawal successful. Remaining balance: ${account_balance:.2f}")
 else:
